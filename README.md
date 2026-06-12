@@ -2,11 +2,11 @@
 
 > 一站式产品管理 (PM) 技能合集，适配 **WorkBuddy**。
 >
-> 基于多个顶级开源 PM 技能仓库整合而成，覆盖产品全生命周期。
+> 基于多个顶级开源 PM 技能仓库 + 自有项目技能整合而成，覆盖产品全生命周期。
 
 ## 概览
 
-**114+ 个 PM 技能**，来自三大开源仓库，共 14 个分类。
+**133 个 PM 技能**，来自 7 个来源，共 18 个分类。
 
 | 分类 | 数量 | 来源 |
 |------|:---:|------|
@@ -24,19 +24,26 @@
 | 🏆 **PM Career & Leadership** | 7 | deanpeters |
 | 🔬 **Workshops & Facilitation** | 5 | deanpeters |
 | 🎯 **End-to-End Workflows** | 7 | deanpeters + digidai |
-| **🏠 pm-hub (聚合入口)** | 1 | 自定义 |
+| 🔬 **Industry Analysis** | 4 | industry-analyzer-skill |
+| 📊 **Business Strategy & Analysis** | 8 | business-decision-tool |
+| 🏆 **KPMG Strategy Framework** | 1 | kpmg-strategy-framework |
+| 🎯 **Lead Scoring** | 2 | lead-scoring |
+| 🏠 **pm-hub (聚合入口)** | 1 | 自定义 |
 
 ## 技能来源
-
-本仓库整合了以下开源项目：
 
 | 来源 | 许可协议 | 贡献技能数 |
 |------|---------|:---------:|
 | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | MIT | 68 |
 | [deanpeters/Product-Manager-Skills](https://github.com/deanpeters/Product-Manager-Skills) | CC BY-NC-SA 4.0 | 45 |
-| [Digidai/Product-Manager-Skills](https://github.com/Digidai/Product-Manager-Skills) | CC BY-NC-SA 4.0 | 1 (pm-operator-digidai) |
+| [Digidai/Product-Manager-Skills](https://github.com/Digidai/Product-Manager-Skills) | CC BY-NC-SA 4.0 | 1 |
+| [business-decision-tool](https://github.com/zrxparley/business-decision-tool) | MIT | 11 |
+| [industry-analyzer-skill](https://github.com/zrxparley/industry-analyzer-skill) | MIT | 4 |
+| [lead-scoring](https://github.com/zrxparley/lead-scoring) | MIT | 2 |
+| [kpmg-strategy-framework](https://github.com/zrxparley/kpmg-strategy-framework) | MIT | 1 |
+| [pm-hub (自定义)](https://github.com/zrxparley/pm-skills) | MIT | 1 |
 
-> **注**：来自 deanpeters 和 Digidai 的技能标记为 `CC BY-NC-SA 4.0`，使用时请注意非商业性要求及署名义务。详细信息见各 skill 的 SKILL.md 前端元数据。
+> **注**：来自 deanpeters 和 Digidai 的技能标记为 `CC BY-NC-SA 4.0`，使用时请注意非商业性要求及署名义务。自建项目来源的技能均为 MIT。
 
 ## 安装到 WorkBuddy
 
@@ -55,16 +62,17 @@ rm -rf /tmp/pm-skills
 1. **直接聊**：说"帮我写个 PRD"、"做一个 SWOT 分析"——自动匹配对应技能
 2. **`/pm`**：输入 `/pm` 查看完整菜单，选择方向自动路由
 
-## 与原版的区别
+## 与原始仓的区别
 
 - ✅ WorkBuddy 前端元数据适配（`agent_created: true`、`location: user`）
 - ✅ 替换 `$ARGUMENTS` 为 `{user_input}`
-- ✅ 新增 `/pm` 聚合入口 skill —— 114+ 技能智能路由
-- ✅ 整合三大 PM 技能仓库，去重合并
+- ✅ 新增 `/pm` 聚合入口 skill —— 133 技能智能路由
+- ✅ 整合三大开源 PM 仓库 + 四个自有项目技能，去重合并
 - ✅ 所有技能 `skills/` 扁平目录，即拷即用
 
 ## 许可证
 
 - **来自 phuryn/pm-skills 的技能**：MIT License
-- **来自 deanpeters 和 Digidai 的技能**：CC BY-NC-SA 4.0（每个 skill 的 SKILL.md 前端元数据中标注了 license 和 source 字段）
+- **来自 deanpeters 和 Digidai 的技能**：CC BY-NC-SA 4.0
+- **来自自建项目的技能**：MIT License
 - **pm-hub 入口 skill**：MIT License

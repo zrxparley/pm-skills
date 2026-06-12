@@ -1,6 +1,6 @@
 ---
 name: pm
-description: "Product Management Skills Hub — aggregate entry point for all PM skills. Use /pm to browse all categories: product discovery, strategy, execution, market research, analytics, go-to-market, marketing/growth, toolkit, and AI shipping. Routes to the right sub-skill based on what the user selects."
+description: "Product Management Skills Hub — aggregate entry point for all PM skills. Use /pm to browse all categories: product discovery, strategy, execution, market research, analytics, GTM, marketing/growth, toolkit, AI shipping, industry analysis, lead scoring, and business strategy. Routes to the right sub-skill based on what the user selects."
 agent_created: true
 location: user
 ---
@@ -212,6 +212,49 @@ Then present the appropriately scoped options.
 | **pm-operator-digidai** | 全能 PM 操作员：主动反击 + 教练模式 + 6 阶段 PM Sprint |
 | **skill-authoring-workflow** | 元工作流：选择路径→验证→更新文档→打包 |
 
+## 🔬 Industry Analysis (4 skills)
+
+| Skill | When to Use |
+|-------|-------------|
+| **industry-top-enterprise-analyzer** | 行业头部企业分析 — 识别并分析行业领军企业 |
+| **industry-ecosystem-mapper** | 行业生态图谱 — 绘制完整行业生态的参与者与价值流动 |
+| **industry-digital-solutions-analyzer** | 数字化方案分析 — 分析行业数字化转型方案与技术供应商 |
+| **industry-opportunity-analyzer** | 行业机会分析 — 识别并排序行业垂直领域的市场机会 |
+
+## 📊 Business Strategy & Analysis (8 skills)
+
+| Skill | When to Use |
+|-------|-------------|
+| **bcg-growth-share-matrix** | BCG 矩阵 — 对产品组合进行明星/金牛/问号/瘦狗分类 |
+| **value-chain-analysis** | 价值链分析 — 识别创造竞争优势的主要/支持活动 |
+| **driving-forces-analysis** | 行业驱动力分析 — 识别塑造行业演变的驱动力 |
+| **financial-ratios-analysis** | 财务比率分析 — 评估盈利能力、流动性、效率、偿债能力 |
+| **issue-analysis-framework** | 问题分析框架 — MECE 原则与问题树的拆解方法 |
+| **product-lifecycle-analysis** | 产品生命周期分析 — 评估产品在导入/成长/成熟/衰退阶段 |
+| **scenario-analysis** | 情景分析 — 探索多种可能的未来情景以辅助产品决策 |
+| **win-loss-analysis** | 赢单/丢单分析 — 系统评估交易结果以改进竞争力和产品策略 |
+
+## 🏆 KPMG Strategy Framework (1 skill)
+
+| Skill | When to Use |
+|-------|-------------|
+| **kpmg-strategy-framework** | KPMG 战略咨询框架 — 7 个心智模型 + 5 条决策启发式 |
+
+## 🎯 Lead Scoring (2 skills)
+
+| Skill | When to Use |
+|-------|-------------|
+| **lead-scoring-starter** | 线索打分启动 — 设置打分标准和维度进行销售线索评估 |
+| **lead-scoring-report** | 线索打分报告 — 生成结构化线索评分报告 |
+
+## 🏗️ Business Decision Tool (3 skills)
+
+| Skill | When to Use |
+|-------|-------------|
+| **business-context-opportunity** | 商业背景与机会分析 — 评估市场环境，发现产品战略空白机会 |
+| **business-positioning-model** | 商业定位模型 — 定义战略定位、目标市场与价值主张 |
+| **business-value-roadmap** | 商业价值路线图 — 将价值创造杠杆与产品路线图对齐 |
+
 ---
 
 ## Smart Routing Logic
@@ -309,6 +352,23 @@ Based on what the user says, route to the right sub-skill:
 | "增长渠道/获客渠道" | acquisition-channel-advisor |
 | "健康诊断/SaaS 健康" | business-health-diagnostic |
 | "功能投资/ROI" | feature-investment-advisor |
+| "BCG/波士顿矩阵/产品组合" | bcg-growth-share-matrix |
+| "价值链/价值链分析" | value-chain-analysis |
+| "行业驱动力/驱动力" | driving-forces-analysis |
+| "财务分析/财务比率" | financial-ratios-analysis |
+| "问题树/问题分析/MECE" | issue-analysis-framework |
+| "产品生命周期/PLC" | product-lifecycle-analysis |
+| "情景分析/场景规划" | scenario-analysis |
+| "赢单/丢单/win loss" | win-loss-analysis |
+| "KPMG/战略框架/心智模型" | kpmg-strategy-framework |
+| "行业分析/行业调研" | industry-top-enterprise-analyzer 或 industry-ecosystem-mapper |
+| "生态图谱/行业生态" | industry-ecosystem-mapper |
+| "数字化方案/行业数字化" | industry-digital-solutions-analyzer |
+| "行业机会/机会分析" | industry-opportunity-analyzer |
+| "线索打分/lead scoring" | lead-scoring-starter 或 lead-scoring-report |
+| "商业机会/市场背景" | business-context-opportunity |
+| "商业定位/企业定位" | business-positioning-model |
+| "商业价值/价值路线图" | business-value-roadmap |
 
 ## Response Style
 
