@@ -1,6 +1,6 @@
 ---
 name: pm
-description: "Product Management Skills Hub — aggregate entry point for all PM skills. Use /pm to browse all categories: product discovery, strategy, execution, market research, analytics, GTM, marketing/growth, toolkit, AI shipping, industry analysis, lead scoring, and business strategy. Routes to the right sub-skill based on what the user selects."
+description: "Product Management Skills Hub — aggregate entry point for all PM skills. Use /pm to browse all categories: product discovery, strategy, execution, market research, analytics, GTM, marketing/growth, toolkit, AI shipping, industry analysis, lead scoring, business strategy, and self-evolving skills (SkillOpt). Routes to the right sub-skill based on what the user selects."
 agent_created: true
 location: user
 ---
@@ -256,6 +256,13 @@ Then present the appropriately scoped options.
 | **business-positioning-model** | 商业定位模型 — 定义战略定位、目标市场与价值主张 |
 | **business-value-roadmap** | 商业价值路线图 — 将价值创造杠杆与产品路线图对齐 |
 
+## 🧬 Self-Evolution — SkillOpt (2 skills)
+
+| Skill | When to Use |
+|-------|-------------|
+| **skillopt-optimizer** | Microsoft SkillOpt 训练循环 — 将 PM 技能文档视为可训练状态，通过 rollout→reflect→aggregate→select→update→evaluate 迭代优化，有验证门控保证单调提升 |
+| **skillopt-sleep** | Microsoft SkillOpt-Sleep 睡眠循环 — 离线自我进化，回顾使用记录→挖掘重复任务→离线回放→验证门控整合→分阶段审核，让技能越用越好 |
+
 ---
 
 ## Smart Routing Logic
@@ -370,6 +377,12 @@ Based on what the user says, route to the right sub-skill:
 | "商业机会/市场背景" | business-context-opportunity |
 | "商业定位/企业定位" | business-positioning-model |
 | "商业价值/价值路线图" | business-value-roadmap |
+| "自我进化/技能训练/优化技能" | skillopt-optimizer |
+| "技能优化/epoch/训练循环" | skillopt-optimizer |
+| "睡眠/睡眠循环/夜间优化" | skillopt-sleep |
+| "sleep cycle/离线进化" | skillopt-sleep |
+| "技能自学习/越用越好/self evolve" | skillopt-sleep 或 skillopt-optimizer |
+| "SkillOpt/微软技能优化/microsoft技能" | skillopt-optimizer 或 skillopt-sleep |
 
 ## Response Style
 

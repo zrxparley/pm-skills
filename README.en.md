@@ -4,11 +4,11 @@
 
 <h1 align="center">PM Skills 🏪</h1>
 
-> **One-stop Product Management skill collection for WorkBuddy** — 133 PM skills, ready to use.
+> **One-stop Product Management skill collection for WorkBuddy** — 135 PM skills, ready to use.
 
 [![GitHub stars](https://img.shields.io/github/stars/zrxparley/pm-skills)](https://github.com/zrxparley/pm-skills)
 [![License](https://img.shields.io/badge/license-MIT%20%2B%20CC%20BY--NC--SA%204.0-blue)](https://github.com/zrxparley/pm-skills)
-[![Skills](https://img.shields.io/badge/skills-133-brightgreen)](https://github.com/zrxparley/pm-skills/skills)
+[![Skills](https://img.shields.io/badge/skills-135-brightgreen)](https://github.com/zrxparley/pm-skills/skills)
 [![WorkBuddy](https://img.shields.io/badge/WorkBuddy-ready-purple)](https://www.codebuddy.ai/docs/workbuddy/Overview)
 [![中文](https://img.shields.io/badge/lang-中文-red)](README.md)
 [![English](https://img.shields.io/badge/lang-English-blue)](README.en.md)
@@ -129,7 +129,7 @@ pm-skills/
     ├── swot-analysis/        # SWOT analysis
     ├── jobs-to-be-done/      # JTBD framework
     ├── kpmg-strategy-framework/  # KPMG strategy framework
-    ├── ...                   # 133 skills total
+    ├── ...                   # 135 skills total
 ```
 
 Each skill is a directory containing a single `SKILL.md`. Just copy to `~/.workbuddy/skills/` to use.

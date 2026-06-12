@@ -4,11 +4,11 @@
 
 <h1 align="center">PM Skills 🏪</h1>
 
-> **WorkBuddy 的一站式产品管理技能合集** — 133 个 PM 技能，即装即用。
+> **WorkBuddy 的一站式产品管理技能合集** — 135 个 PM 技能，即装即用。
 
 [![GitHub stars](https://img.shields.io/github/stars/zrxparley/pm-skills)](https://github.com/zrxparley/pm-skills)
 [![License](https://img.shields.io/badge/license-MIT%20%2B%20CC%20BY--NC--SA%204.0-blue)](https://github.com/zrxparley/pm-skills)
-[![Skills](https://img.shields.io/badge/skills-133-brightgreen)](https://github.com/zrxparley/pm-skills/skills)
+[![Skills](https://img.shields.io/badge/skills-135-brightgreen)](https://github.com/zrxparley/pm-skills/skills)
 [![WorkBuddy](https://img.shields.io/badge/WorkBuddy-ready-purple)](https://www.codebuddy.ai/docs/workbuddy/Overview)
 [![中文](https://img.shields.io/badge/lang-中文-red)](README.md)
 [![English](https://img.shields.io/badge/lang-English-blue)](README.en.md)
@@ -95,6 +95,7 @@ rm -rf /tmp/pm-skills
 | 🏆 **KPMG Framework** | 1 | KPMG 7 心智模型 + 5 决策启发式 |
 | 🎯 **Lead Scoring** | 2 | 线索打分 |
 | 🏠 **pm-hub (聚合入口)** | 1 | `/pm` 路由导航 |
+| 🧬 **Self-Evolution (SkillOpt)** | 2 | 技能训练循环, 睡眠进化 |
 
 ---
 
@@ -107,6 +108,7 @@ rm -rf /tmp/pm-skills
 | [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | MIT | 68 |
 | [deanpeters/Product-Manager-Skills](https://github.com/deanpeters/Product-Manager-Skills) | CC BY-NC-SA 4.0 | 45 |
 | [Digidai/Product-Manager-Skills](https://github.com/Digidai/Product-Manager-Skills) | CC BY-NC-SA 4.0 | 1 |
+| [microsoft/SkillOpt](https://github.com/microsoft/SkillOpt) | MIT | 2 |
 | [business-decision-tool](https://github.com/zrxparley/business-decision-tool) | MIT | 11 |
 | [industry-analyzer-skill](https://github.com/zrxparley/industry-analyzer-skill) | MIT | 4 |
 | [lead-scoring](https://github.com/zrxparley/lead-scoring) | MIT | 2 |
@@ -129,7 +131,7 @@ pm-skills/
     ├── swot-analysis/        # SWOT 分析
     ├── jobs-to-be-done/      # JTBD 框架
     ├── kpmg-strategy-framework/  # KPMG 战略框架
-    ├── ...                   # 共 133 个技能
+    ├── ...                   # 共 135 个技能
 ```
 
 每个技能对应一个目录，内含 `SKILL.md` 文件。直接复制到 `~/.workbuddy/skills/` 即可使用。
