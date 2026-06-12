@@ -1,4 +1,8 @@
-# PM Skills 🏪
+<p align="center">
+  <img src="assets/logo.png" alt="PM Skills Logo" width="200">
+</p>
+
+<h1 align="center">PM Skills 🏪</h1>
 
 > **One-stop Product Management skill collection for WorkBuddy** — 133 PM skills, ready to use.
 

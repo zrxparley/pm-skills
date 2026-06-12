@@ -1,4 +1,8 @@
-# PM Skills 🏪
+<p align="center">
+  <img src="assets/logo.png" alt="PM Skills Logo" width="200">
+</p>
+
+<h1 align="center">PM Skills 🏪</h1>
 
 > **WorkBuddy 的一站式产品管理技能合集** — 133 个 PM 技能，即装即用。
 
