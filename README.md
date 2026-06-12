@@ -6,6 +6,8 @@
 [![License](https://img.shields.io/badge/license-MIT%20%2B%20CC%20BY--NC--SA%204.0-blue)](https://github.com/zrxparley/pm-skills)
 [![Skills](https://img.shields.io/badge/skills-133-brightgreen)](https://github.com/zrxparley/pm-skills/skills)
 [![WorkBuddy](https://img.shields.io/badge/WorkBuddy-ready-purple)](https://www.codebuddy.ai/docs/workbuddy/Overview)
+[![中文](https://img.shields.io/badge/lang-中文-red)](README.md)
+[![English](https://img.shields.io/badge/lang-English-blue)](README.en.md)
 
 让你的 AI 助手具备产品经理的完整思维框架。从用户发现、战略规划到执行落地、上市增长——覆盖产品全生命周期。
 
