@@ -1,69 +1,70 @@
 # PM Skills 🏪
 
-> 基于 [phuryn/pm-skills](https://github.com/phuryn/pm-skills) 改编，适配 **WorkBuddy** 的 69 个产品管理技能合集。
+> 一站式产品管理 (PM) 技能合集，适配 **WorkBuddy**。
+>
+> 基于多个顶级开源 PM 技能仓库整合而成，覆盖产品全生命周期。
 
 ## 概览
 
-一站式产品管理技能包，覆盖产品全生命周期——从发现、策略、执行到上市、增长。每个技能都是一个独立的 `SKILL.md`，在 WorkBuddy 中根据你的对话自动匹配触发。
+**114+ 个 PM 技能**，来自三大开源仓库，共 14 个分类。
 
-## 🗂️ 技能分类
+| 分类 | 数量 | 来源 |
+|------|:---:|------|
+| 🎯 **Product Discovery** | 15 | phuryn + deanpeters |
+| 📋 **Product Strategy** | 13 | phuryn + deanpeters |
+| 🚀 **Execution** | 19 | phuryn + deanpeters |
+| 🔬 **Market Research** | 11 | phuryn + deanpeters |
+| 📊 **Data Analytics** | 5 | phuryn + deanpeters |
+| 🏪 **Go-to-Market** | 6 | phuryn |
+| 📈 **Marketing & Growth** | 9 | phuryn + deanpeters |
+| 🧰 **Toolkit & Templates** | 10 | phuryn + deanpeters |
+| 🤖 **AI Shipping & AI Product** | 5 | phuryn + deanpeters |
+| 🎯 **JTBD & Problem Framing** | 3 | deanpeters |
+| 📊 **SaaS Finance & Metrics** | 4 | deanpeters |
+| 🏆 **PM Career & Leadership** | 7 | deanpeters |
+| 🔬 **Workshops & Facilitation** | 5 | deanpeters |
+| 🎯 **End-to-End Workflows** | 7 | deanpeters + digidai |
+| **🏠 pm-hub (聚合入口)** | 1 | 自定义 |
 
-| 分类 | 数量 | 覆盖领域 |
-|------|:---:|---------|
-| 🎯 **Product Discovery** | 13 | brainstorm、访谈、假设验证、OST、功能优先级 |
-| 📋 **Product Strategy** | 12 | SWOT、PESTLE、波特五力、商业模式、定价策略 |
-| 🚀 **Execution** | 16 | PRD、OKR、Sprint、回顾、发布、红队测试 |
-| 🔬 **Market Research** | 7 | 用户画像、旅程图、竞品分析、市场估算 |
-| 📊 **Data Analytics** | 3 | SQL、Cohort、A/B 测试 |
-| 🏪 **Go-to-Market** | 6 | GTM、ICP、战卡、增长飞轮 |
-| 📈 **Marketing & Growth** | 5 | 定位、北极星指标、营销创意 |
-| 🧰 **Toolkit** | 4 | NDA、隐私政策、简历评审、语法检查 |
-| 🤖 **AI Shipping** | 2 | 代码文档化、实现差距分析 |
-| **🏠 pm-hub (聚合入口)** | 1 | 输入 `/pm` 浏览所有技能并路由导航 |
+## 技能来源
 
-**总计：69 个技能**
+本仓库整合了以下开源项目：
+
+| 来源 | 许可协议 | 贡献技能数 |
+|------|---------|:---------:|
+| [phuryn/pm-skills](https://github.com/phuryn/pm-skills) | MIT | 68 |
+| [deanpeters/Product-Manager-Skills](https://github.com/deanpeters/Product-Manager-Skills) | CC BY-NC-SA 4.0 | 45 |
+| [Digidai/Product-Manager-Skills](https://github.com/Digidai/Product-Manager-Skills) | CC BY-NC-SA 4.0 | 1 (pm-operator-digidai) |
+
+> **注**：来自 deanpeters 和 Digidai 的技能标记为 `CC BY-NC-SA 4.0`，使用时请注意非商业性要求及署名义务。详细信息见各 skill 的 SKILL.md 前端元数据。
 
 ## 安装到 WorkBuddy
 
-### 方式一：克隆到 skills 目录
-
 ```bash
-# 将所有技能安装到 WorkBuddy 用户技能目录
 git clone https://github.com/zrxparley/pm-skills.git /tmp/pm-skills
 cp -R /tmp/pm-skills/skills/* ~/.workbuddy/skills/
 rm -rf /tmp/pm-skills
 ```
 
-### 方式二：选择安装
-
-```bash
-# 只安装你需要的技能
-cp -R ~/pm-skills/skills/create-prd ~/.workbuddy/skills/
-cp -R ~/pm-skills/skills/swot-analysis ~/.workbuddy/skills/
-# ...
-```
-
-### 方式三：在 WorkBuddy 中说这句话
+或在 WorkBuddy 中直接说：
 
 > 「安装 https://github.com/zrxparley/pm-skills 这个技能」
 
 ## 使用方式
 
-安装后，WorkBuddy 会自动识别这些技能。你可以：
-
 1. **直接聊**：说"帮我写个 PRD"、"做一个 SWOT 分析"——自动匹配对应技能
-2. **用 `/pm`**：输入 `/pm` 查看完整菜单，选择方向自动路由
-3. **用 `/pm-hub`**：同上
+2. **`/pm`**：输入 `/pm` 查看完整菜单，选择方向自动路由
 
 ## 与原版的区别
 
-本仓库在 [phuryn/pm-skills](https://github.com/phuryn/pm-skills) 基础上做了以下适配：
-
-- ✅ 添加 `agent_created: true` / `location: user` 前端元数据（WorkBuddy 兼容）
-- ✅ 替换 `$ARGUMENTS` 为 `{user_input}`（WorkBuddy 变量语法）
-- ✅ 新增 `/pm` 聚合入口 skill（pm-hub）——带智能路由表
-- ✅ 所有技能直接放在 `skills/` 扁平目录下，即拷即用
+- ✅ WorkBuddy 前端元数据适配（`agent_created: true`、`location: user`）
+- ✅ 替换 `$ARGUMENTS` 为 `{user_input}`
+- ✅ 新增 `/pm` 聚合入口 skill —— 114+ 技能智能路由
+- ✅ 整合三大 PM 技能仓库，去重合并
+- ✅ 所有技能 `skills/` 扁平目录，即拷即用
 
 ## 许可证
 
-MIT License — 基于 [phuryn/pm-skills](https://github.com/phuryn/pm-skills) (MIT) 改编。
+- **来自 phuryn/pm-skills 的技能**：MIT License
+- **来自 deanpeters 和 Digidai 的技能**：CC BY-NC-SA 4.0（每个 skill 的 SKILL.md 前端元数据中标注了 license 和 source 字段）
+- **pm-hub 入口 skill**：MIT License
