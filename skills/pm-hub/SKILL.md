@@ -83,6 +83,7 @@ Then present the appropriately scoped options.
 | **test-scenarios** | Happy path + 边界 + 异常场景 |
 | **dummy-dataset** | 生成真实感假数据（CSV/JSON/SQL/Python） |
 | **prioritization-frameworks** | 9 种排优先级框架参考（ICE/RICE/MoSCoW/Kano 等） |
+| **prioritization-advisor** | 引导式排序框架推荐 — 根据场景推荐最合适的排优方法 |
 | **strategy-red-team** | 对抗性压力测试策略 |
 
 ## 🔬 Market Research (10 skills)
@@ -314,7 +315,7 @@ Based on what the user says, route to the right sub-skill:
 | "AI 文档/代码文档" | shipping-artifacts |
 | "代码 gap/差异分析" | intended-vs-implemented |
 | "red team/压力测试" | strategy-red-team |
-| "框架/排优先级参考" | prioritization-frameworks |
+| "框架/排优先级参考" | prioritization-frameworks 或 prioritization-advisor |
 | "JTBD/任务故事/待办任务" | jobs-to-be-done |
 | "问题陈述/问题框架" | problem-statement 或 problem-framing-canvas |
 | "SaaS 指标/财务指标" | finance-metrics-quickref 或 saas-revenue-growth-metrics 或 saas-economics-efficiency-metrics |
